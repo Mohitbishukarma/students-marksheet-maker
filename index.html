@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marksheet Maker</title>
+    <script type="text/javascript" src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js">
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="heading">Welcome to Marksheet Maker</h1>
+        <h2 class="sub_heading"> by mohitsCreation</h2>
+    </div>
+    <div class="marksheetCreating">
+        <button class="createNew">Create New Marksheet</button>
+    </div>
+    <div id="dataContainer">
+        <div class="institution">
+            <h2>ABC Secondary School </h2>
+            <address>
+                <span>Tuslsipur,Sub Metropokitan city-3,Dang,Nepal</span>
+            </address>
+            <p>Half Early Examination</p>
+        </div>
+        <div class="container">
+            <caption>Students Marksheet</caption>
+            <center>
+            <table class="marksheet">
+                <tr>
+                    <th>S.N</th>
+                    <th>Subject</th>
+                    <th>Max Marks</th>
+                    <th>Marks Obtained</th>
+                    <th>Result/Remarks</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Com.English</td>
+                    <td>100</td>
+                    <td>85</td>
+                    <td>pass</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Math</td>
+                    <td>100</td>
+                    <td>95</td>
+                    <td>pass</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Science</td>
+                    <td>100</td>
+                    <td>90</td>
+                    <td>pass</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Nepali</td>
+                    <td>100</td>
+                    <td>85</td>
+                    <td>pass</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Social</td>
+                    <td>100</td>
+                    <td>80</td>
+                    <td>pass</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>EPH</td>
+                    <td>100</td>
+                    <td>88</td>
+                    <td>pass</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Opt Math</td>
+                    <td>100</td>
+                    <td>98</td>
+                    <td>pass</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Opt Education</td>
+                    <td>100</td>
+                    <td>84</td>
+                    <td>pass</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Grand Total</td>
+                    <td>800</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            </table>
+            </center>
+        </div>
+    </div>
+    <button onclick="generateMarksheet()" class="btn_download">Dowbload Your Marksheet
+    </button>
+    <script src="main.js"></script>
+</body>
+
+</html>
