@@ -12,100 +12,199 @@
 </head>
 
 <body>
+    <!--page heading-->
     <div class="header">
         <h1 class="heading">Welcome to Marksheet Maker</h1>
         <h2 class="sub_heading"> by mohitsCreation</h2>
     </div>
-    <div class="marksheetCreating">
-        <button class="createNew">Create New Marksheet</button>
-    </div>
+    
+    
+    <!--marksheet creating button-->
+    <center>
+        
+        
+        <div class="marksheetCreating">
+            <button class="createNew">Create New Marksheet</button>
+            <p>"create your marksheet with our platform"</p>
+        </div>
+        
+        
+        
+        <!--students datials -->
+        <div id="student_info">
+            <h3>Fill Student Detials</h3>
+            <!--student name-->
+            <label for="student_name"> Student Name :</label>
+            <input type="text" id="student_name" placeholder="student_name" /><br>
+            <!--student roll num-->
+            <label for="roll.no"> Roll Num :</label>
+            <input type="number" id="roll.no" placeholder="roll.no" /><br>
+            <!--student class-->
+            <label for="clas"> Class :</label>
+            <input type="number" id="class" placeholder="class" /><br>
+            <!--father name-->
+            <label for="father"> Father Name :</label>
+            <input type="text" id="father" placeholder="fatners_name" /><br>
+            <!--mother name-->
+            <label for="mother"> Mother Name :</label>
+            <input type="text" id="mother" placeholder="mother_name" /><br>
+        </div>
+        
+        
+
+
+        <!--student marks detials-->
+        <div id="marks_info">
+            <h3>Fill Obtained Marks</h3>
+            <!--obtianed marks in english-->
+            <label for="english">English :</label>
+            <input type="number" id="english" placeholder="40" /><br>
+            <!--obtianed marks in nepali-->
+            <label for="nepali">Nepali :</label>
+            <input type="number" id="nepali" placeholder="40" /><br>
+            <!--obtianed marks in math-->
+            <label for="math">Math :</label>
+            <input type="number" id="math" placeholder="40" /><br>
+            <!--obtianed marks in science-->
+            <label for="science">Science :</label>
+            <input type="number" id="science" placeholder="40" /><br>
+            <!--obtianed marks in social -->
+            <label for="social">Social :</label>
+            <input type="number" id="social" placeholder="40" /><br>
+            <!--obtianed marks in EPH-->
+            <label for="eph">EPH :</label>
+            <input type="number" id="eph" placeholder="40" /><br>
+            <!--obtianed marks in optional first -->
+            <label for="opt_math">Optional First(Math) :</label>
+            <input type="number" id="opt_math" placeholder="40" /><br>
+            <!--obtianed marks in optional second-->
+            <label for="education">Education :</label>
+            <input type="number" id="educatiom" placeholder="40" />
+        </div>
+        <button onclick="myMarksheet()">Generate Now</button>
+    </center>
+    
+    
+    
+    
+    <!--marksheet data container-->
     <div id="dataContainer">
+        <!--institutaion detials-->
         <div class="institution">
             <h2>ABC Secondary School </h2>
             <address>
                 <span>Tuslsipur,Sub Metropokitan city-3,Dang,Nepal</span>
-            </address>
-            <p>Half Early Examination</p>
+            </address><br>
+            <span>Half Early Examination</span>
         </div>
+        <!--marksheet Subject marks-->
         <div class="container">
-            <caption>Students Marksheet</caption>
-            <center>
-            <table class="marksheet">
-                <tr>
-                    <th>S.N</th>
-                    <th>Subject</th>
-                    <th>Max Marks</th>
-                    <th>Marks Obtained</th>
-                    <th>Result/Remarks</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Com.English</td>
-                    <td>100</td>
-                    <td>85</td>
-                    <td>pass</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Math</td>
-                    <td>100</td>
-                    <td>95</td>
-                    <td>pass</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Science</td>
-                    <td>100</td>
-                    <td>90</td>
-                    <td>pass</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Nepali</td>
-                    <td>100</td>
-                    <td>85</td>
-                    <td>pass</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Social</td>
-                    <td>100</td>
-                    <td>80</td>
-                    <td>pass</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>EPH</td>
-                    <td>100</td>
-                    <td>88</td>
-                    <td>pass</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Opt Math</td>
-                    <td>100</td>
-                    <td>98</td>
-                    <td>pass</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Opt Education</td>
-                    <td>100</td>
-                    <td>84</td>
-                    <td>pass</td>
-                </tr>
-                <tr>
-                    <td colspan="2">Grand Total</td>
-                    <td>800</td>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-            </table>
+            
+            <center><caption><u>Students Marksheet</u></caption></center>
+            
+                <table class="student_fill" border="0">
+                    <tr>
+                        <td>Name of Students :</td>
+                        <td id="fill_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Class :</td>
+                        <td id="fill_class"></td>
+                    </tr>
+                    <tr>
+                        <td>Roll.No :</td>
+                        <td id="fill_roll.no"></td>
+                    </tr>
+                    <tr>
+                        <td>Father Name :</td>
+                        <td id="fill_father_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Mother Name :</td>
+                        <td id="fill_mother_name"></td>
+                    </tr>
+                </table>
+                <center>
+                <table class="marksheet">
+                    <tr>
+                        <th>S.N</th>
+                        <th>Subject</th>
+                        <th>Max Marks</th>
+                        <th>Marks Obtained</th>
+                        <th>Result/Remarks</th>
+                    </tr>
+                    <tr>
+                        <td class="marks_fill">1</td>
+                        <td class="marks_fill">Com.English</td>
+                        <td class="marks_fill">100</td>
+                        <td class="marks_fill" id="english_marks">85</td>
+                        <td class="marks_fill" id="english_remarks">pass</td>
+                    </tr>
+                    <tr>
+                        <td class="marks_fill">2</td>
+                        <td class="marks_fill">Math</td>
+                        <td class="marks_fill">100</td>
+                        <td class="marks_fill" id="math_marks">95</td>
+                        <td class="marks_fill" id="math_remarks">pass</td>
+                    </tr>
+                    <tr>
+                        <td class="marks_fill">3</td>
+                        <td class="marks_fill">Science</td>
+                        <td class="marks_fill">100</td>
+                        <td class="marks_fill" id="science_marks">90</td>
+                        <td class="marks_fill" id="science_remarks">pass</td>
+                    </tr>
+                    <tr>
+                        <td class="marks_fill">4</td>
+                        <td class="marks_fill">Nepali</td>
+                        <td class="marks_fill">100</td>
+                        <td class="marks_fill" id="nepali_marks">85</td>
+                        <td class="marks_fill" id="nepali_remarks">pass</td>
+                    </tr>
+                    <tr>
+                        <td class="marks_fill">5</td>
+                        <td class="marks_fill">Social</td>
+                        <td class="marks_fill">100</td>
+                        <td class="marks_fill" id="social_marks">80</td>
+                        <td class="marks_fill" id="social_remarks">pass</td>
+                    </tr>
+                    <tr>
+                        <td class="marks_fill">6</td>
+                        <td class="marks_fill">EPH</td>
+                        <td class="marks_fill">100</td>
+                        <td class="marks_fill" id="eph_marks">88</td>
+                        <td class="marks_fill" id="eph_remarks">pass</td>
+                    </tr>
+                    <tr>
+                        <td class="marks_fill">7</td>
+                        <td class="marks_fill">Opt Math</td>
+                        <td class="marks_fill">100</td>
+                        <td class="marks_fill" id="opt1_marks">98</td>
+                        <td class="marks_fill" id="opt1_remarks">pass</td>
+                    </tr>
+                    <tr>
+                        <td class="marks_fill">8</td>
+                        <td class="marks_fill">Opt Education</td>
+                        <td class="marks_fill">100</td>
+                        <td class="marks_fill" id="opt2_marks">84</td>
+                        <td class="marks_fill" id="opt2_remarks">pass</td>
+                    </tr>
+                    <tr>
+                        <td class="marks_fill" colspan="2">Grand Total</td>
+                        <td class="marks_fill">800</td>
+                        <td class="marks_fill" id="total_marks">...</td>
+                        <td class="marks_fill" id="total_remarks">...</td>
+                    </tr>
+                </table>
             </center>
         </div>
     </div>
-    <button onclick="generateMarksheet()" class="btn_download">Dowbload Your Marksheet
-    </button>
+    <!--marksheet downloading section-->
+    <center>
+        <button onclick="generateMarksheet()" class="btn_download">Dowbload Your Marksheet
+        </button>
+    </center>
+    <!--script calling-->
     <script src="main.js"></script>
 </body>
 

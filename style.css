@@ -1,41 +1,88 @@
-*{
-    padding:0;
-    margin:0;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
 }
 
 .header {
-    
-}
-
-.header, heading{
-    
-}
-
-.header, sub_heading{
-    
-}
-
-.marksheetcreating{
-    
-}
-
-.marksheetcreating, createNew{
-    
-}
-
-.institution{
     text-align: center;
-}
-.container{
-    text-align: center;
+    padding: 10px;
+    background-color: dodgerblue;
+    margin: 0 auto;
+    color: white;
+   
 }
 
-.container,marksheet{
+.header,
+heading {
+    font-size: 24px;
     
 }
 
-.marksheet,th,td{
+.header,
+sub_heading {
+    font-size: 12px;
+    margin-top: 4px;
+} 
+
+.marksheetCreating {
+   /* background-color: gray;*/
+    height:100px;}
+    
+.createNew {
+    height: 40px;
+    width:200px;
+    padding:5px 0;
+    color:white;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: green;
+    outline: none;
+    border:2px solid grey;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.createNew:hover{ 
+    border:2px solid black;
+    background-color:lavender;
+    color:black ;
+}
+
+.marksheetCreating,p{
+    font-style: italic;
+    font-size: 15px;
+    margin-top: 18px;
+    color: gray;
+    
+    
+}
+
+.institution {
+    text-align: center;
+} 
+
+.container {
+    
+}
+
+
+.student_fill{
+    text-align: left;
+}
+
+.marksheet,
+th, .marks_fill {
     border: 2px solid gray;
     border-collapse: collapse;
     text-align: center;
+}
+
+.btn_download {
+    text-align: center;
+    padding: 5px;
+    height: 30px;
 }
