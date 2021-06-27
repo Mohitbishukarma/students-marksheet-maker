@@ -1,6 +1,6 @@
 
 const createNew=()=>{
-    document.getElementById("details_container").style.display = "none";
+    document.getElementById("details_container").style.display="inline-block";
 }
 
 
