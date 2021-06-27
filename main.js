@@ -1,5 +1,17 @@
-//getting data of student detials
 
+const createNew=()=>{
+    document.getElementById("details_container").style.display = "none";
+}
+
+
+
+
+
+
+
+
+
+//getting data of student detials
 const myMarksheet=() =>{
 
     //students details
@@ -25,7 +37,6 @@ const myMarksheet=() =>{
     document.getElementById('fill_father_name').innerHTML = father_name;
     document.getElementById('fill_mother_name').innerHTML = mother_name;
 
-   
     
     //students marks filling
     document.getElementById('english_marks').innerHTML =english;

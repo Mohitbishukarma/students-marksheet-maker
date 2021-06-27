@@ -52,6 +52,7 @@ sub_heading {
     color:black ;
 }
 
+
 .marksheetCreating,p{
     font-style: italic;
     font-size: 15px;
@@ -59,6 +60,10 @@ sub_heading {
     color: gray;
     
     
+}
+
+.details_container{
+    display: none;
 }
 
 .institution {
