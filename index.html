@@ -40,14 +40,14 @@
             <label for="roll.no"> Roll Num :</label>
             <input type="number" id="roll.no" placeholder="roll.no" /><br>
             <!--student class-->
-            <label for="clas"> Class :</label>
+            <label for="class"> Class :</label>
             <input type="number" id="class" placeholder="class" /><br>
             <!--father name-->
             <label for="father"> Father Name :</label>
             <input type="text" id="father" placeholder="fatners_name" /><br>
             <!--mother name-->
             <label for="mother"> Mother Name :</label>
-            <input type="text" id="mother" placeholder="mother_name" /><br>
+            <input type="text" id="mother" placeholder="mother_name" />
         </div>
         
         
@@ -61,25 +61,25 @@
             <input type="number" id="english" placeholder="40" /><br>
             <!--obtianed marks in nepali-->
             <label for="nepali">Nepali :</label>
-            <input type="number" id="nepali" placeholder="40" /><br>
+            <input type="number" id="nepali" placeholder="42" /><br>
             <!--obtianed marks in math-->
             <label for="math">Math :</label>
-            <input type="number" id="math" placeholder="40" /><br>
+            <input type="number" id="math" placeholder="60" /><br>
             <!--obtianed marks in science-->
             <label for="science">Science :</label>
-            <input type="number" id="science" placeholder="40" /><br>
+            <input type="number" id="science" placeholder="80" /><br>
             <!--obtianed marks in social -->
             <label for="social">Social :</label>
-            <input type="number" id="social" placeholder="40" /><br>
+            <input type="number" id="social" placeholder="90" /><br>
             <!--obtianed marks in EPH-->
             <label for="eph">EPH :</label>
-            <input type="number" id="eph" placeholder="40" /><br>
+            <input type="number" id="eph" placeholder="30" /><br>
             <!--obtianed marks in optional first -->
-            <label for="opt_math">Optional First(Math) :</label>
-            <input type="number" id="opt_math" placeholder="40" /><br>
+            <label for="optmath">Optional First(Math) :</label>
+            <input type="number" id="optmath" placeholder="47" /><br>
             <!--obtianed marks in optional second-->
             <label for="education">Education :</label>
-            <input type="number" id="educatiom" placeholder="40" />
+            <input type="number" id="education" placeholder="38" />
         </div>
         <button onclick="myMarksheet()">Generate Now</button>
     </center>
@@ -98,6 +98,10 @@
             <span>Half Early Examination</span>
         </div>
         <!--marksheet Subject marks-->
+        
+        
+        
+        
         <div class="container">
             
             <center><caption><u>Students Marksheet</u></caption></center>
@@ -124,6 +128,9 @@
                         <td id="fill_mother_name"></td>
                     </tr>
                 </table>
+                
+                
+                
                 <center>
                 <table class="marksheet">
                     <tr>
@@ -137,56 +144,57 @@
                         <td class="marks_fill">1</td>
                         <td class="marks_fill">Com.English</td>
                         <td class="marks_fill">100</td>
-                        <td class="marks_fill" id="english_marks">85</td>
+                        <td class="marks_fill" id="english_marks"></td>
                         <td class="marks_fill" id="english_remarks">pass</td>
                     </tr>
+                     <tr>
+                         <td class="marks_fill">2</td>
+                         <td class="marks_fill">Nepali</td>
+                         <td class="marks_fill">100</td>
+                         <td class="marks_fill" id="nepali_marks"></td>
+                         <td class="marks_fill" id="nepali_remarks">pass</td>
+                     </tr>
                     <tr>
-                        <td class="marks_fill">2</td>
+                        <td class="marks_fill">3</td>
                         <td class="marks_fill">Math</td>
                         <td class="marks_fill">100</td>
-                        <td class="marks_fill" id="math_marks">95</td>
+                        <td class="marks_fill" id="math_marks"></td>
                         <td class="marks_fill" id="math_remarks">pass</td>
                     </tr>
                     <tr>
-                        <td class="marks_fill">3</td>
+                        <td class="marks_fill">4</td>
                         <td class="marks_fill">Science</td>
                         <td class="marks_fill">100</td>
-                        <td class="marks_fill" id="science_marks">90</td>
+                        <td class="marks_fill" id="science_marks"></td>
                         <td class="marks_fill" id="science_remarks">pass</td>
                     </tr>
-                    <tr>
-                        <td class="marks_fill">4</td>
-                        <td class="marks_fill">Nepali</td>
-                        <td class="marks_fill">100</td>
-                        <td class="marks_fill" id="nepali_marks">85</td>
-                        <td class="marks_fill" id="nepali_remarks">pass</td>
-                    </tr>
+                   
                     <tr>
                         <td class="marks_fill">5</td>
                         <td class="marks_fill">Social</td>
                         <td class="marks_fill">100</td>
-                        <td class="marks_fill" id="social_marks">80</td>
+                        <td class="marks_fill" id="social_marks"></td>
                         <td class="marks_fill" id="social_remarks">pass</td>
                     </tr>
                     <tr>
                         <td class="marks_fill">6</td>
                         <td class="marks_fill">EPH</td>
                         <td class="marks_fill">100</td>
-                        <td class="marks_fill" id="eph_marks">88</td>
+                        <td class="marks_fill" id="eph_marks"></td>
                         <td class="marks_fill" id="eph_remarks">pass</td>
                     </tr>
                     <tr>
                         <td class="marks_fill">7</td>
                         <td class="marks_fill">Opt Math</td>
                         <td class="marks_fill">100</td>
-                        <td class="marks_fill" id="opt1_marks">98</td>
+                        <td class="marks_fill" id="opt1_marks"></td>
                         <td class="marks_fill" id="opt1_remarks">pass</td>
                     </tr>
                     <tr>
                         <td class="marks_fill">8</td>
                         <td class="marks_fill">Opt Education</td>
                         <td class="marks_fill">100</td>
-                        <td class="marks_fill" id="opt2_marks">84</td>
+                        <td class="marks_fill" id="opt2_marks"></td>
                         <td class="marks_fill" id="opt2_remarks">pass</td>
                     </tr>
                     <tr>
@@ -199,6 +207,8 @@
             </center>
         </div>
     </div>
+    
+    
     <!--marksheet downloading section-->
     <center>
         <button onclick="generateMarksheet()" class="btn_download">Dowbload Your Marksheet
